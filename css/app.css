@@ -1,0 +1,46 @@
+#to-left{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    //transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    background-color: deepskyblue;
+    z-index: 1000;
+    /*transition: 2000ms; -s putvija bez animate()*/
+}
+#to-right{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    //transform: translate(50%,-50%);
+    width: 30px;
+    height: 30px;
+    background-color: deepskyblue;
+}
+
+#my-carousel {
+    width: 100%;
+    height: 250px;
+    border: 1px solid deepskyblue;
+    position: relative;
+    z-index: 1000;
+    overflow: hidden;
+    display: flex;
+}
+
+#my-slider {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top:50%;
+    //left: 50%;
+    transform: translate(0,-50%);
+    z-index: 100;
+}
+img{
+    display: block;
+    width: 25.333%;
+    height: auto;
+    margin: 10px 4%;
+}
